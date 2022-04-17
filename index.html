@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - Desencriptador</title>
+    
+    <link rel="reset" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+  </head>
+
+<body>
+    <div class="header">
+      <img src="imagenes/Vector.svg">
+      
+    </div>
+    <div class="container">
+      <div class="main_container">
+        <textarea name="textarea" cols="150" rows="50" id="textbox" placeholder="Ingrese el texto aquí"></textarea>
+        <div class="encriptar_desencriptar_container">
+          <div class="icono_admiracion">
+            <img src="imagenes/icono_admiracion.png">
+            <p class="input_warning">Sólo letras minúsculas y sin acentos</p>
+          </div>
+          <div class="encriptar_desencriptar_buttons">
+            <button type="button" id="encriptarButton" onclick="encriptar()">
+              Encriptar
+            </button>
+            <button type="button" id="desencriptarButton" onclick="desencriptar()">
+              Desencriptar
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="resultado">
+        <textarea readonly="" id="resultados"></textarea>
+        <div id="no_funciona">
+          <img class="img_no_funciona" src="imagenes/Muñeco.svg" alt="">
+          <h5>Ningún mensaje fue encontrado</h5>
+          <textarea name="textBoxresultado"  cols="10" rows="10" id="textresultado" placeholder="Ingresa el texto que deseas encriptar o desencriptar"></textarea>
+          <button type="button" id="copyResultButton" onclick="copiar()">
+            Copiar
+          </button>
+        </div>
+        
+      </div>
+    </div>
+    
+    <footer>
+      <div>
+        <span>© <span id="year">2022</span> M.Belén Yancafil</span>
+      </div>
+    
+    </footer>
+  
+    <script src="js/form.js" defer=""></script>
+</body>
+</html>
